@@ -1,4 +1,66 @@
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background: #06718c;
+}
+
+nav a {
+  display: block;
+
+  padding: 10px;
+  text-decoration: none;
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #053541;
+}
+body {
+  margin: 0;
+}
+
 header {
-  display: grid;
-  padding: 30em;
+  display: block;
+  background: #06718c;
+}
+
+.current {
+  text-decoration: underline solid white 3px;
+}
+
+.banner {
+  background-image: url(/images/hero.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+}
+
+.banner p {
+  color: #06718c;
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+  nav a {
+    display: inline-block;
+  }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/9ed23996a7.js"
       crossorigin="anonymous"
@@ -12,16 +13,17 @@
   </head>
   <body>
     <header>
-      <h1>Rainydays</h1>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fas fa-bars"></i
+      ></label>
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Collection</li>
-          <li>Contact Us</li>
-        </ul>
+        <a class="current" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Collection</a>
+        <a href="">Contact Us</a>
+        <a href="" class="fas fa-shopping-cart"></a>
       </nav>
-      <i class="fas fa-shopping-cart"></i>
     </header>
     <main>
       <section>
