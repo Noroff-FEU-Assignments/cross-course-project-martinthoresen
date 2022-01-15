@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 nav,
 #menu-checkbox {
   display: none;
@@ -5,58 +11,191 @@ nav,
 
 #menu-checkbox:checked ~ nav {
   display: block;
+  width: 300px;
 }
 
-nav {
-  position: absolute;
+header {
+  display: block;
+  position: sticky;
   background: #06718c;
+  padding: 10px;
+  top: 0;
 }
-
+nav {
+  position: relative;
+  background: #06718c;
+  text-align: center;
+}
 nav a {
   display: block;
-
-  padding: 10px;
+  padding: 10px 60px;
   text-decoration: none;
   font-family: Oswald, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #053541;
 }
-body {
-  margin: 0;
+
+h1 {
+  color: #053541;
 }
 
-header {
-  display: block;
-  background: #06718c;
+h2 {
+  color: #8c4300;
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
 }
-
+h3 {
+  color: #053541;
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
 .current {
   text-decoration: underline solid white 3px;
 }
 
-.banner {
-  background-image: url(/images/hero.jpg);
+.hero-image {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 1000px;
+  width: 100%;
+  z-index: -1;
+}
+.container-collection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container-collection p {
+  font-family: Quattrocento, Verdana, Tahoma, sans-serif;
+  font-size: 1.5em;
+}
+.container-collection img {
+  margin: 5px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.banner p {
-  color: #06718c;
-  font-family: Oswald, Verdana, Tahoma, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
+.collection-text {
+  margin: 5px;
+  float: right;
+}
+.small-button-fill {
+  background-color: #06718c;
+  border: none;
+  color: white;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0 20px;
+}
+.small-button-stroke {
+  background-color: transparent;
+  border: none;
+  color: black;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: #06718c;
+  border-width: 2px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.button-fill {
+  background-color: #06718c;
+  border: none;
+  color: white;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 5px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0 20px;
+}
+.container-gifts {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container-gifts img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container-gifts p {
+  font-family: Quattrocento, Verdana, Tahoma, sans-serif;
+  font-size: 1.7em;
+  text-align: center;
+}
+.sale {
+  text-decoration: line-through;
+}
+.sale::after {
+  content: "$39.99";
+  text-decoration: none;
+  color: red;
+  display: block;
+  text-align: center;
+}
+footer {
+  background: #053541;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
 }
 
 @media (min-width: 600px) {
   nav {
     display: block;
-    position: static;
+    position: relative;
+    min-width: 1000px;
   }
 
+  nav a {
+    font-size: 20px;
+    display: block;
+  }
+
+  .container-collection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .collection-text {
+    text-align: left;
+    padding-left: 10%;
+  }
   .hamburger-icon {
     display: none;
   }
