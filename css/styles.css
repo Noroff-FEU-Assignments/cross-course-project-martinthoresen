@@ -17,16 +17,21 @@ nav,
 header {
   display: block;
   position: sticky;
-  background-color: #06718c;
-  padding: 20px;
+  background-color: rgba(42, 163, 194, 0.9);
+  padding: 20px 20px;
   top: 0;
-  filter: blur(feGaussianBlur stdDeviation=5);
+}
+
+#logo {
+  margin-left: 100px;
+  display: inline;
+  width: 200px;
 }
 
 nav {
   position: relative;
-  background: #06718c;
   text-align: center;
+  margin: 0 20%;
 }
 nav a {
   display: block;
@@ -43,11 +48,8 @@ nav a {
 .hamburger-icon {
   font-size: 30px;
 }
-h1 {
-  color: #053541;
-}
 
-h2 {
+h1 {
   color: #8c4300;
   font-family: Oswald, Verdana, Tahoma, sans-serif;
   font-weight: bold;
@@ -55,7 +57,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
-h3 {
+h2 {
   color: #053541;
   font-family: Oswald, Verdana, Tahoma, sans-serif;
   font-weight: bold;
@@ -75,6 +77,18 @@ h3 {
   max-height: 1000px;
   object-fit: cover;
   z-index: -1;
+}
+.hero p {
+  display: none;
+  margin-top: -300px;
+  margin-bottom: 300px;
+  margin-left: -800px;
+  color: #06718c;
+  font-family: Oswald, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .container-collection {
   display: flex;
@@ -141,15 +155,16 @@ h3 {
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  padding: 5px 60px;
+  padding: 5px 40px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-family: Montserrat, Verdana, Tahoma, sans-serif;
   font-weight: bolder;
   font-size: 25px;
-  margin: 0 20px;
+  display: block;
+  inline-size: 150px;
+  margin: 0 auto;
 }
 .container-gifts {
   display: flex;
@@ -191,7 +206,7 @@ footer {
 footer a {
   color: #8c4300;
   font-size: 35px;
-  padding: 20px;
+  margin: 20px;
 }
 
 @media (min-width: 600px) {
@@ -214,6 +229,7 @@ footer a {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    margin: 100px;
   }
   .container-collection {
     flex-direction: row;
@@ -226,7 +242,21 @@ footer a {
   .hamburger-icon {
     display: none;
   }
+
+  #logo {
+    margin-left: 40px;
+    display: inline;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+  }
   nav a {
     display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero p {
+    display: block;
   }
 }
