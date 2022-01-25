@@ -24,9 +24,9 @@ header {
 }
 
 #logo {
-  margin-left: 100px;
-  display: inline;
-  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  width: 60%;
 }
 
 nav {
@@ -47,9 +47,7 @@ nav a {
   color: #053541;
   margin: auto;
 }
-nav a:last-child {
-  margin-left: auto;
-}
+
 .hamburger-icon {
   font-size: 30px;
 }
@@ -199,6 +197,19 @@ h3 {
   margin: 5em;
 }
 
+.store-pages {
+  display: flex;
+  width: fit-content;
+  margin: 4em auto;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.store-pages a {
+  text-decoration: none;
+  font-family: "Quattrocento", Verdana, Tahoma, sans-serif;
+  color: #686868;
+  font-size: 1.7em;
+}
 .container-gifts div {
   flex: 1 0 300px;
   max-width: 300px;
@@ -231,9 +242,9 @@ h3 {
   text-align: center;
 }
 .collection-intro p {
-  margin: 0 auto;
+  margin: 2em auto;
   text-align: left;
-  max-width: 60%;
+  max-width: 50%;
 }
 .link-style {
   font-family: "Quattrocento", Verdana, Tahoma, sans-serif;
@@ -241,13 +252,18 @@ h3 {
   color: #06718c;
 }
 .sort-collection {
-  margin-top: 5em;
-  margin-left: 10em;
   display: flex;
-  justify-content: flex-start;
+  margin: 2em 0;
   gap: 20px;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  align-content: center;
+}
+.sort-collection p {
+  color: #053541;
+  font-family: "Quattrocento", Verdana, Tahoma, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .sort-collection a {
   color: #053541;
@@ -289,6 +305,10 @@ h3 {
   font-weight: bold;
   font-size: 15px;
 }
+#rain-cloud {
+  margin: 5em auto;
+  display: block;
+}
 footer {
   background: #053541;
   color: white;
@@ -309,13 +329,17 @@ footer a {
 
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
+  nav a:last-child {
+    right: 0;
+  }
   nav a {
     font-size: 20px;
-    display: block;
+    min-width: fit-content;
     padding: 10px;
+    align-content: flex-end;
   }
 
   .container-gifts {
@@ -340,14 +364,17 @@ footer a {
     max-width: 28%;
   }
   #logo {
-    margin-left: 40px;
-    display: inline;
-    width: 300px;
-    position: absolute;
+    display: flex;
+    position: relative;
+    float: left;
+    width: fit-content;
     z-index: 1;
   }
-  nav a {
-    display: inline-block;
+  .sort-collection {
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin: 2em auto;
   }
 }
 
