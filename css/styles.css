@@ -306,8 +306,21 @@ h3 {
   font-size: 15px;
 }
 #rain-cloud {
-  margin: 5em auto;
+  margin: 2em auto;
   display: block;
+  width: 20%;
+}
+#line {
+  max-width: 50%;
+  color: #06718c;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #06718c, #ccc);
+}
+.about-us-text {
+  max-width: 50%;
+  margin: 2em auto;
 }
 footer {
   background: #053541;
