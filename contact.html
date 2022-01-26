@@ -30,21 +30,25 @@
     </header>
     <h1>Get in touch:</h1>
     <main>
-      <div>
-        <h2>Send us a Message</h2>
-
-        <input type="name" />
-        <label for="name">Name</label>
-        <input type="email" name="email" id="email" />
-        <label for="email">E-Mail</label>
-        <input type="text" name="text" id="text" />
-        <label for="text">Message</label>
-      </div>
-      <div>
-        <i class="fas fa-phone"></i>
-        <p>+47 111 22 333</p>
-        <i class="fas fa-envelope"></i>
-        <p>support@rainydays.com</p>
+      <div class="contact-container">
+        <div class="contact-form">
+          <p>Send us a Message</p>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <p>+47 111 22 333</p>
+          <i class="fas fa-envelope"></i>
+          <p>support@rainydays.com</p>
+        </div>
       </div>
     </main>
     <footer>
