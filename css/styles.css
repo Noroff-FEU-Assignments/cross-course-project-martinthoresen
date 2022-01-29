@@ -10,6 +10,61 @@ nav,
   display: none;
 }
 
+.cart-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 3em;
+  color: #fff;
+  background: #06718c;
+  padding: 2em;
+  border-radius: 50%;
+}
+
+#add-to-cart,
+.cart {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.cart {
+  border: 1px solid #053541;
+  background: white;
+  position: fixed;
+  right: 2px;
+  padding: 2em;
+  top: 3em;
+  margin-top: 1.5em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+  border-radius: 0 0 0 10%;
+}
+
+.item {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-family: "Oswald", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.item img {
+  width: 5em;
+  object-fit: cover;
+}
+#add-to-cart:checked ~ .cart {
+  display: flex;
+}
+
 #menu-checkbox:checked ~ nav {
   display: block;
   width: 300px;
@@ -152,6 +207,7 @@ h3 {
   font-weight: bolder;
   font-size: 25px;
 }
+
 .small-button-stroke {
   background-color: transparent;
   border: none;
@@ -188,6 +244,7 @@ h3 {
   inline-size: 150px;
   margin: 0 auto;
 }
+
 .container-gifts {
   display: flex;
   align-items: center;
@@ -354,6 +411,32 @@ h3 {
 .contact.info p {
   float: right;
 }
+.checkout {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+.checkout h3 {
+  text-align: start;
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.checkoutform {
+  flex: 1;
+}
+.checkoutsummary {
+  flex: 1;
+}
+.checkoutsummary a {
+  margin: 2em 3em;
+}
+
 footer {
   background: #053541;
   color: white;

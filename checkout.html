@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainydays - Checkout</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The homepage of Rainydays" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Oswald:wght@400;700&family=Quattrocento&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9ed23996a7.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+      <a href="index.html"><img id="logo" src="images/rainydays.png" alt="The Rainydays Logo" /></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="collection.html">Collection</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="checkout">
+      <div class="checkoutform">
+        <h1>Checkout</h1>
+        <div>
+          <h3>Shipping Address</h3>
+          <p>Jane Doe</p>
+          <p>Kirkevegen 13</p>
+          <p>Oslo, Oslo, 1313</p>
+          <p>Norway</p>
+          <p>111 22 333</p>
+          <input type="checkbox" name="billing-adr" id="billing-adr" checked />
+          <label for="billing-adr">Use as billing address</label>
+        </div>
+        <div>
+          <h3>Shipping Method</h3>
+          <input type="radio" name="shipping" id="shipping" checked />
+          <label for="shipping">$0.00 | 6-7 Days | Express</label>
+        </div>
+        <div>
+          <h3>Payment Method</h3>
+
+          <input type="radio" name="payment" id="cardpayment" checked />
+          <label for="cardpayment"
+            >Pay with credit or debit card <i class="fab fa-cc-visa"><i class="fab fa-cc-mastercard"></i></i
+          ></label>
+          <input type="radio" name="payment" id="paypal" />
+          <label for="paypal">Pay with PayPal<i class="fab fa-cc-paypal"></i></label>
+        </div>
+        <div>
+          <h3>Card Details</h3>
+
+          <fieldset>
+            <legend>Credit Card Info</legend>
+            <form method="post">
+              <label for="cardnumber">Card Number</label>
+              <input type="tel" id="cardnumber" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" />
+              <label for="expiration">Expiration date</label>
+              <input type="month" name="expiration" id="expiration" />
+              <label for="cardname">Cardholder's Name</label>
+              <input type="text" name="cardname" id="cardname" placeholder="John Doe" />
+              <label for="cvc">Security Code</label>
+              <input type="password" name="ccv" id="cvc" inputmode="numeric" placeholder="CVC" />
+            </form>
+          </fieldset>
+        </div>
+      </div>
+      <div class="checkoutsummary">
+        <h3>Order Summary - 1 Item(s)</h3>
+
+        <div class="item">
+          <img src="/images/floodstopper.jpg" alt="An image of the floodstopper jacket." />
+          <p>The floodstopper</p>
+          <p>$59.99</p>
+        </div>
+        <h3>Country/Region: Norway, EUR</h3>
+
+        <p>Subtotal....................................................................... $59.99</p>
+        <p>Shipping total............................................................ (free)</p>
+        <p>Duties and taxes....................................................... (included)</p>
+
+        <h3>Order Total (USD) $59.99</h3>
+        <a href="order-confirmed.html" class="small-button-fill">Place Order</a>
+      </div>
+    </section>
+  </body>
+</html>
