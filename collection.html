@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Oswald:wght@400;700&family=Quattrocento&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Oswald:wght@400;700&family=Quattrocento&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9ed23996a7.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -25,16 +22,25 @@
         <a href="about.html">About</a>
         <a class="current" href="collection.html">Collection</a>
         <a href="contact.html">Contact Us</a>
-        <a href=""><i class="fas fa-shopping-cart"></i></a>
       </nav>
     </header>
+    <div class="cart-icon">
+      <input type="checkbox" id="add-to-cart" />
+      <label for="add-to-cart"><i class="fas fa-shopping-cart"></i></label>
+      <section class="cart">
+        <h3>Your Cart</h3>
+        <div class="item">
+          <img src="/images/floodstopper.jpg" alt="An image of the floodstopper jacket." />
+          <p>The floodstopper</p>
+          <p>$59.99</p>
+        </div>
+        <a class="small-button-fill" href="checkout.html">Go to Checkout</a>
+      </section>
+    </div>
     <main>
       <section class="collection-intro">
         <h1>The Valhall Collection</h1>
-        <p>
-          Inspired by the rough and nordic climate, we created a Collection consisting of long-lasting and durable rain jackets. The jackets are both
-          comfortable and stylish.
-        </p>
+        <p>Inspired by the rough and nordic climate, we created a Collection consisting of long-lasting and durable rain jackets. The jackets are both comfortable and stylish.</p>
         <a class="link-style" href="collection-info.html">Read More...</a>
       </section>
       <section>

@@ -43,6 +43,7 @@ label:hover {
   justify-content: space-around;
   gap: 2em;
   border-radius: 0 0 0 10%;
+  box-shadow: -5px 5px 5px gray;
 }
 
 .item {
@@ -437,6 +438,16 @@ h3 {
   margin: 2em 3em;
 }
 
+#orderconfirm {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 4em;
+}
+#orderconfirm a {
+  font-size: 2em;
+}
 footer {
   background: #053541;
   color: white;
