@@ -450,7 +450,18 @@ textarea {
 .checkoutsummary a {
   margin: 2em 3em;
 }
-
+.checkoutsummary .item {
+  width: 18em;
+}
+#card-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#card-details input {
+  height: 25px;
+  margin-top: 1em;
+}
 #orderconfirm {
   display: flex;
   align-content: center;

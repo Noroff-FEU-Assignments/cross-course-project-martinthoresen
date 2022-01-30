@@ -56,18 +56,25 @@
         </div>
         <div>
           <h3>Card Details</h3>
-
           <fieldset>
             <legend>Credit Card Info</legend>
-            <form method="post">
-              <label for="cardnumber">Card Number</label>
-              <input type="tel" id="cardnumber" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" />
-              <label for="expiration">Expiration date</label>
-              <input type="month" name="expiration" id="expiration" />
-              <label for="cardname">Cardholder's Name</label>
-              <input type="text" name="cardname" id="cardname" placeholder="John Doe" />
-              <label for="cvc">Security Code</label>
-              <input type="password" name="ccv" id="cvc" inputmode="numeric" placeholder="CVC" />
+            <form method="post" id="card-details">
+              <div>
+                <label for="cardnumber">Card Number</label>
+                <input type="tel" id="cardnumber" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" />
+              </div>
+              <div>
+                <label for="expiration">Expiration date</label>
+                <input type="month" name="expiration" id="expiration" />
+              </div>
+              <div>
+                <label for="cardname">Cardholder's Name</label>
+                <input type="text" name="cardname" id="cardname" placeholder="John Doe" />
+              </div>
+              <div>
+                <label for="cvc">Security Code</label>
+                <input type="password" name="ccv" id="cvc" inputmode="numeric" placeholder="CVC" />
+              </div>
             </form>
           </fieldset>
         </div>
@@ -87,7 +94,7 @@
         <p>Duties and taxes....................................................... (included)</p>
 
         <h3>Order Total (USD) $59.99</h3>
-        <a href="order" class="small-button-fill">Place Order</a>
+        <a href="order-confirmed.html" class="small-button-fill">Place Order</a>
       </div>
     </section>
   </body>
