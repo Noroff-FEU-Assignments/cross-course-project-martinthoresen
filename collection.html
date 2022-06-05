@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The Valhall Collection" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Oswald:wght@400;700&family=Quattrocento&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="https://kit.fontawesome.com/9ed23996a7.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for my site -->
     <script>
@@ -45,6 +45,12 @@
       <input type="checkbox" id="add-to-cart" />
       <label for="add-to-cart"><i class="fas fa-shopping-cart"></i></label>
       <section class="cart">
+        <h3>Your cart</h3>
+        <div class="cart-list"></div>
+        <div class="total">Total:</div>
+        <a href="checkout.html">Checkout</a>
+      </section>
+      <!-- <section class="cart">
         <h3>Your Cart</h3>
         <div class="item">
           <img src="/images/floodstopper.jpg" alt="An image of the floodstopper jacket." />
@@ -52,7 +58,7 @@
           <p>$59.99</p>
         </div>
         <a class="small-button-fill" href="checkout.html">Go to Checkout</a>
-      </section>
+      </section> -->
     </div>
     <main>
       <section class="collection-intro">
@@ -73,61 +79,61 @@
             <a href=""><img src="images/stealthy.jpg" alt="The Stealthy Jacket" /></a>
             <h3>The Stealthy</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="1">Add to Cart</button>
           </div>
           <div>
             <a href=""> <img src="images/floodstopper.jpg" alt="The Floodstopper Jacket" /></a>
             <h3>The Floodstopper</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="2">Add to Cart</button>
           </div>
           <div>
             <a href=""> <img src="images/classic.jpg" alt="The Classic Jacket" /></a>
             <h3>The Classic</h3>
             <p class="sale">$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="3">Add to Cart</button>
           </div>
           <div>
             <a href=""><img src="images/rugged.jpg" alt="The Rugged Jacket" /></a>
             <h3>The Rugged</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="4">Add to Cart</button>
           </div>
           <div>
             <a href=""><img src="images/stealthy.jpg" alt="The Stealthy Jacket" /></a>
             <h3>The Stealthy</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="1">Add to Cart</button>
           </div>
           <div>
             <a href=""> <img src="images/floodstopper.jpg" alt="The Floodstopper Jacket" /></a>
             <h3>The Floodstopper</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="2">Add to Cart</button>
           </div>
           <div>
             <a href=""> <img src="images/classic.jpg" alt="The Classic Jacket" /></a>
             <h3>The Classic</h3>
             <p class="sale">$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="3">Add to Cart</button>
           </div>
           <div>
             <a href=""><img src="images/rugged.jpg" alt="The Rugged Jacket" /></a>
             <h3>The Rugged</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="4">Add to Cart</button>
           </div>
           <div>
             <a href=""><img src="images/stealthy.jpg" alt="The Stealthy Jacket" /></a>
             <h3>The Stealthy</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="1">Add to Cart</button>
           </div>
           <div>
             <a href=""> <img src="images/floodstopper.jpg" alt="The Floodstopper Jacket" /></a>
             <h3>The Floodstopper</h3>
             <p>$59.99</p>
-            <a class="add-to-cart" href="checkout.html">Add to Cart</a>
+            <button class="cart-button" data-product="2">Add to Cart</button>
           </div>
         </div>
         <div class="store-pages">
@@ -151,5 +157,6 @@
         <a href=""> <i class="fab fa-facebook-f"></i></a>
       </div>
     </footer>
+    <script src="js/collection.js"></script>
   </body>
 </html>

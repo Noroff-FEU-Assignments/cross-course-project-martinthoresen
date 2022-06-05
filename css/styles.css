@@ -21,6 +21,18 @@ nav,
   border-radius: 50%;
 }
 
+.cart-button {
+  background-color: #06718c;
+  border: none;
+  color: white;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
 #add-to-cart,
 .cart {
   display: none;
@@ -332,7 +344,7 @@ h3 {
 .shop-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2em;
   row-gap: 6em;
   max-width: 100%;
