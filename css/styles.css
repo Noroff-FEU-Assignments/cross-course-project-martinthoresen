@@ -47,7 +47,7 @@ label:hover {
   background: white;
   position: fixed;
   right: 2px;
-  padding: 2em;
+  padding: 4em;
   top: 3em;
   margin-top: 1.5em;
   display: none;
@@ -56,6 +56,7 @@ label:hover {
   gap: 2em;
   border-radius: 0 0 0 10%;
   box-shadow: -5px 5px 5px gray;
+  z-index: 2;
 }
 
 .item {
@@ -69,7 +70,30 @@ label:hover {
   font-size: 20px;
   text-transform: uppercase;
 }
+#added-to-cart {
+  display: none;
+  position: fixed;
+  color: green;
+  background: #efefef;
+  z-index: 2;
+  font-family: "Oswald", Verdana, Tahoma, sans-serif;
+  font-size: 2em;
+}
 
+.total {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.cart-item {
+  color: black;
+}
+.cart-image {
+  width: 4em;
+  float: left;
+  margin-right: 1em;
+}
 .item img {
   width: 5em;
   object-fit: cover;
