@@ -406,9 +406,11 @@ h3 {
 
 .contact-form input {
   display: block;
-  margin-bottom: 2em;
+  margin-top: 1em;
   color: #6e6e6e;
+  padding: 10px;
   font-size: 1em;
+  width: 100%;
 }
 textarea {
   resize: none;
@@ -420,6 +422,39 @@ textarea {
 .contact-form p {
   font-size: 1.5em;
   color: #6e6e6e;
+}
+.form-error {
+  margin-bottom: 2em;
+  display: none;
+  color: red;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.submit-form {
+  background: #06718c;
+  border: none;
+  width: 10em;
+  padding: 1em;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+.message {
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+.success {
+  color: green;
+  border-color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.error {
+  color: red;
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
 }
 .contact-info p {
   font-size: 1.5em;
