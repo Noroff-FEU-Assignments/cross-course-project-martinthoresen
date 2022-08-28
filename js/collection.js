@@ -1,3 +1,40 @@
+let url = "https://api.flowerpower12394.one/wp-json/wc/store/products";
+const jacketContainer = document.querySelector(".jacket-container");
+
+async function getJacket() {
+  try {
+    const response = await fetch(url);
+    const result = await response.json();
+    const jackets = result;
+    console.log(jackets);
+
+    jacketContainer.innerHTML = "";
+
+    for (let i = 0; i < jackets.length; i++) {
+      function createHtml(jackets) {
+        jacketContainer.innerHTML += `<div class="jackets">
+                                <a href="details.html?id=${jackets[i].id}">
+                               <img src="${jackets[i].images[0].src}">
+                               <h3>${jackets[i].name}</h3>
+                                <p>$
+                                ${jackets[i].prices.price / 100}</p>
+                                </a>
+                                <button class="cart-button" data-product="${jackets[i].id}">Add to Cart</button>
+                                </div>`;
+      }
+
+      createHtml(jackets);
+    }
+  } catch (error) {
+    console.log(error);
+    const errorMsg = createMessage("error", "There was an error loading the API");
+    jacketContainer.innerHTML = errorMsg;
+  }
+}
+getJacket();
+
+// Shopping Cart --------
+
 import { productArray } from "/js/components/productList.js";
 
 const cartList = document.querySelector(".cart-list");
