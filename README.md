@@ -15,7 +15,7 @@ This project was the cross-course assignment we reciecved to show what we had le
 
 ### Installing
 
-You can install the project by clonng the github repo to your computer.
+You can install the project by cloning the github repo to your computer.
 
 ### Running
 
